@@ -1,0 +1,20 @@
+<!-- https://raw.githubusercontent.com/tej3107/Medical_json/main/Json/model.json -->
+
+<script>
+    async function loadModel() {
+      model = undefined;
+      modellling = undefined;
+      model = tf.loadLayersModel("https://raw.githubusercontent.com/tej3107/Medical_json/main/Json/model.json")
+      .then(models =>{modellling = models;})
+      .catch(error =>{console.log(error);})
+      console.log(model);
+    }
+    loadModel();
+
+    function make_prediction() {
+      input_xs = ;
+      output = modellling.predict(input_xs);
+      outputData = output.dataSync();
+    }
+
+</script>
