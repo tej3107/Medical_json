@@ -1,6 +1,10 @@
 <!-- https://raw.githubusercontent.com/tej3107/Medical_json/main/Json/model.json -->
 
 <script>
+    // alert('hi');
+    // import * as cv from 'opencv';
+
+    console.log('here');
     async function loadModel() {
       model = undefined;
       modellling = undefined;
@@ -12,9 +16,36 @@
     loadModel();
 
     function make_prediction() {
-      input_xs = ;
-      output = modellling.predict(input_xs);
-      outputData = output.dataSync();
+        console.log('here');
+        input_xs = 'https://raw.githubusercontent.com/tej3107/Medical_json/main/Json/000c1434d8d7.png';
+        // input_xs = 'https://www.bwallpaperhd.com/wp-content/uploads/2021/01/NashPoint.jpg';
+        var image = new Image(224,224);
+        image.src = input_xs;
+        image.id = 'image';
+        image.crossOrigin = "anonymous";
+        console.log(image); 
+
+        ul = document.querySelector('#ul');
+        ul.append(image);
     }
+    make_prediction();
+
+    function make_prediction_main(){
+        image = document.getElementById('image');
+        console.log(image,'dhbakbda');
+
+        const a = tf.browser.fromPixels(image);
+        a.print();
+        console.log(a.shape);
+
+        b = a.reshape([1,224,224,3]);
+        console.log(b.shape,"dkajboladi");
+
+        output = modellling.predict(b);
+        outputData = output.dataSync();
+
+        console.log(outputData);
+    }
+
 
 </script>
