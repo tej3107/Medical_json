@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care-On-Line</title>
+
+    <link rel="icon" href="data:image/png;base64,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" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script sec="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- jQuerry -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> Care-On-Line </a>
+
+    <nav class="navbar">
+        <a href="/">home</a>
+        <a href="#services">services</a>
+        <a href="#about">about</a>
+        <a href="#review">review</a>
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="image">
+        <img src="/image/Crousel/gallery-5.jpg" alt="">
+    </div>
+
+    <div class="content">
+        <h3>stay safe, stay healthy</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sed autem vero? Magnam, est laboriosam!</p>
+        <a href="#contacts" class="btn"> contact us <span class="fas fa-chevron-right"></span> </a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- icons section starts  -->
+
+<section class="icons-container">
+
+    <div class="icons">
+        <i class="fas fa-procedures"></i>
+        <h3 class="counter">3</h3>
+        <p>Services Available Now</p>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-user-md"></i>
+        <h3 class="counter">560</h3>
+        <p>Patient Logged in</p>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-users"></i>
+        <h3 class="counter">437</h3>
+        <p>satisfied patients</p>
+    </div>
+
+    <!-- <div class="icons">
+        <i class="fas fa-hospital"></i>
+        <h3 class="counter">124</h3>
+        <p>available hospitals</p>
+    </div>  -->
+    
+
+</section>
+
+<!-- icons section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading"> our <span>services</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-notes-medical"></i>
+            <h3>Disease Prognosis</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
+            <a href="/symptoms" class="btn"> Diagnosis <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-ambulance"></i>
+            <h3>Breast Cancer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
+            <a href="https://www.mayoclinic.org/diseases-conditions/breast-cancer/symptoms-causes/syc-20352470" class="btn"> Diagnosis <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-user-md"></i>
+            <h3>Eye Blindeness Check</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
+            <a href="https://enchroma.com/pages/test" class="btn"> Dignosis <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>about</span> us </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="image/about-img.svg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>we take care of your healthy life</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ducimus, quod ex cupiditate ullam in assumenda maiores et culpa odit tempora ipsam qui, quisquam quis facere iste fuga, minus nesciunt.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus vero ipsam laborum porro voluptates voluptatibus a nihil temporibus deserunt vel?</p>
+            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+
+<section class="review" id="review">
+    
+    <h1 class="heading"> client's <span>review</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/pic-1.png" alt="">
+            <h3>john deo</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sapiente nihil aperiam? Repellat sequi nisi aliquid perspiciatis libero nobis rem numquam nesciunt alias sapiente minus voluptatem, reiciendis consequuntur optio dolorem!</p>
+        </div>
+
+        <div class="box">
+            <img src="image/pic-2.png" alt="">
+            <h3>john deo</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sapiente nihil aperiam? Repellat sequi nisi aliquid perspiciatis libero nobis rem numquam nesciunt alias sapiente minus voluptatem, reiciendis consequuntur optio dolorem!</p>
+        </div>
+
+        <div class="box">
+            <img src="image/pic-3.png" alt="">
+            <h3>john deo</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sapiente nihil aperiam? Repellat sequi nisi aliquid perspiciatis libero nobis rem numquam nesciunt alias sapiente minus voluptatem, reiciendis consequuntur optio dolorem!</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> Future <span>Services</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="image/blog-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="icon">
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
+                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3>Malaria</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, eius.</p>
+                <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="image/blog-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="icon">
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
+                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3>Ocular Disease Recognition  </h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, eius.</p>
+                <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer" id="contacts">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#"> <i class="fas fa-chevron-right"></i> home </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> services </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> about </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> review </a>
+        </div>
+
+        <div class="box">
+            <h3>our services</h3>
+            <a href="#"> <i class="fas fa-chevron-right"></i> Disease AI Prediction </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> Breast Cancer </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> Eye Blindness Severity </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> Malaria </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> Ocular Disease </a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +91-999999999 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> tejnarayan@gmail.com </a>
+            <a href="#"> <i class="fas fa-envelope"></i> vishalkumar@gmail.com </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Delhi, india - 110045 </a>
+        </div>
+
+        <div class="box" style="display: none;">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+        </div>
+
+    </div>
+
+    <!-- <div class="credit"> created by <span>mr. web designer</span> | all rights reserved </div> -->
+
+</section>
+
+<!-- footer section ends -->
+
+
+<!-- JS for Counter -->
+
+<script type="text/javascript">
+    (function(e){"use strict";e.fn.counterUp=function(t){var n=e.extend({time:400,delay:10},t);return this.each(function(){var t=e(this),r=n,i=function(){var e=[],n=r.time/r.delay,i=t.text(),s=/[0-9]+,[0-9]+/.test(i);i=i.replace(/,/g,"");var o=/^[0-9]+$/.test(i),u=/^[0-9]+\.[0-9]+$/.test(i),a=u?(i.split(".")[1]||[]).length:0;for(var f=n;f>=1;f--){var l=parseInt(i/n*f);u&&(l=parseFloat(i/n*f).toFixed(a));if(s)while(/(\d+)(\d{3})/.test(l.toString()))l=l.toString().replace(/(\d+)(\d{3})/,"$1,$2");e.unshift(l)}t.data("counterup-nums",e);t.text("0");var c=function(){t.text(t.data("counterup-nums").shift());if(t.data("counterup-nums").length)setTimeout(t.data("counterup-func"),r.delay);else{delete t.data("counterup-nums");t.data("counterup-nums",null);t.data("counterup-func",null)}};t.data("counterup-func",c);setTimeout(t.data("counterup-func"),r.delay)};t.waypoint(i,{offset:"100%",triggerOnce:!0})})}})(jQuery);
+</script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
