@@ -25,6 +25,10 @@ app.get('/symptoms',(req,res)=>{
     res.render('sympt');
 })
 
+app.get('/breastcancer',(req,res)=>{
+    res.render('breastcan.ejs');
+})
+
 app.post("/results",(req,res)=>{
     data=[];perc=[];ab=[];
     // console.log(req.body);
@@ -52,6 +56,6 @@ app.get('/results',(req,res)=>{
     res.render('result',{result:data,perc:perc,ab:ab});
 })
 
-app.listen(process.env.PORT||4000,()=>{
+app.listen(process.env.PORT||3000,()=>{
     console.log('server started');
 })
