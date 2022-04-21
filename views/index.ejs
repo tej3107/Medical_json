@@ -26,6 +26,7 @@
 
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 </head>
@@ -35,14 +36,13 @@
 
 <header class="header">
 
-    <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> Care-On-Line </a>
+   <div class="animate__animated animate__heartBeat animate__repeat-3 animate__slower"> <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> <strong>Care-On-Line </strong></a></div>
 
     <nav class="navbar">
         <a href="/">home</a>
         <a href="#services">services</a>
         <a href="#about">about</a>
         <a href="#review">review</a>
-        <!-- <a href="/signup">signup</a> -->
     </nav>
 
     <div id="menu-btn" class="fas fa-bars"></div>
@@ -55,15 +55,14 @@
 
 <section class="home" id="home">
 
-    <div class="image">
-        <img src="/image/Crousel/gallery-5.jpg" alt="">
+    <div class="image" data-aos="fade-up">
+        <img src="/image/istockphoto-1214423422-612x612.jpg" alt="">
     </div>
 
-    <div class="content">
-        <h3>stay safe, stay healthy</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sed autem vero? Magnam, est laboriosam!</p>
+    <div class="content" data-aos="fade-up">
+        <h3>Get Your Free Checkup Now!</h3>
+        <p>Health Is A State Of Complete Harmony Of The Body, Mind And Spirit. When One Is Free From Physical Disabilities And Mental Distractions, The Gates Of The Soul Open.</p>
         <a href="#contacts" class="btn"> contact us <span class="fas fa-chevron-right"></span> </a>
-
     </div>
 
 </section>
@@ -74,29 +73,25 @@
 
 <section class="icons-container">
 
-    <div class="icons">
+    <div class="icons animate__animated animate__fadeInLeftBig" data-aos="fade-up">
         <i class="fas fa-procedures"></i>
         <h3 class="counter">3</h3>
         <p>Services Available Now</p>
     </div>
 
-    <div class="icons">
+    <div class="icons animate__animated animate__fadeInRightBig" data-aos="fade-up">
         <i class="fas fa-user-md"></i>
         <h3 class="counter">560</h3>
         <p>Patient Logged in</p>
     </div>
 
-    <div class="icons">
+    <div class="icons animate__animated animate__fadeInRightBig " data-aos="fade-up">
         <i class="fas fa-users"></i>
         <h3 class="counter">437</h3>
-        <p>satisfied patients</p>
+        <p>Satisfied Patients</p>
     </div>
 
-    <!-- <div class="icons">
-        <i class="fas fa-hospital"></i>
-        <h3 class="counter">124</h3>
-        <p>available hospitals</p>
-    </div>  -->
+   
     
 
 </section>
@@ -111,24 +106,24 @@
 
     <div class="box-container">
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
             <i class="fas fa-notes-medical"></i>
             <h3>Disease Prognosis</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
+            <p>Get a free online checkup from the comfort of your home.</p>
             <a href="/symptoms" class="btn"> Diagnosis <span class="fas fa-chevron-right"></span> </a>
         </div>
 
-        <div class="box">
-            <i class="fas fa-ambulance"></i>
+        <div class="box" data-aos="fade-up">
+            <i class="fas fa-ribbon"></i>
             <h3>Breast Cancer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
+            <p>Have dubt about breast cancer? Give this test, we will classify you as Melignant or Benign stage.</p>
             <a href="/breastcancer" class="btn"> Diagnosis <span class="fas fa-chevron-right"></span> </a>
         </div>
 
-        <div class="box">
-            <i class="fas fa-user-md"></i>
+        <div class="box " data-aos="fade-up">
+            <i class="fas fa-eye"></i>
             <h3>Eye Blindeness Check</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
+            <p>If you have color blindness, our test can tell you if your color vision deficiency is mild, moderate, or strong — in less than two minutes.</p>
             <a href="https://enchroma.com/pages/test" class="btn"> Dignosis <span class="fas fa-chevron-right"></span> </a>
         </div>
 
@@ -146,14 +141,14 @@
 
     <div class="row">
 
-        <div class="image">
-            <img src="image/about-img.svg" alt="">
+        <div class="image" data-aos="fade-up">
+            <img src="/image/aboutus.svg" alt="">
         </div>
 
-        <div class="content">
-            <h3>we take care of your healthy life</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ducimus, quod ex cupiditate ullam in assumenda maiores et culpa odit tempora ipsam qui, quisquam quis facere iste fuga, minus nesciunt.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus vero ipsam laborum porro voluptates voluptatibus a nihil temporibus deserunt vel?</p>
+        <div class="content" data-aos="fade-up">
+            <h3>We Take care of your Healthy Life</h3>
+            <p>Care On LIne Was Established in April 2022 By The Co-Activity Of 2 students from the department of Information Technology. We take inputs from users and give results using <strong>Machine Learning Models</strong> used in Backend.  Our prediction system is 98% accurate in predicting all current services.</p>
+            <p>Care On Line Is Driven By A Team Of Internet Pioneers With A Demonstrated Reputation Of Helping Specialists Use The Most Current Advances And Showcasing Methodologies to Develop Their Practices. </p>
             <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
         </div>
 
@@ -170,9 +165,9 @@
 
     <div class="box-container">
 
-        <div class="box">
-            <img src="image/pic-1.png" alt="">
-            <h3>john deo</h3>
+        <div class="box" data-aos="fade-up">
+            <img src="/image/pic-1.png" alt="">
+            <h3>Keith Orton</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -180,12 +175,12 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star-half-alt"></i>
             </div>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sapiente nihil aperiam? Repellat sequi nisi aliquid perspiciatis libero nobis rem numquam nesciunt alias sapiente minus voluptatem, reiciendis consequuntur optio dolorem!</p>
+            <p class="text"> A fantastic organisation! Great cutomer support from beginning to end of the process. The team are really informed and go the extra mile at every stage. I would recommend them unreservedly.</p>
         </div>
 
-        <div class="box">
-            <img src="image/pic-2.png" alt="">
-            <h3>john deo</h3>
+        <div class="box" data-aos="fade-up" >
+            <img src="/image/pic-2.png" alt="">
+            <h3>Julian</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -193,12 +188,12 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star-half-alt"></i>
             </div>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sapiente nihil aperiam? Repellat sequi nisi aliquid perspiciatis libero nobis rem numquam nesciunt alias sapiente minus voluptatem, reiciendis consequuntur optio dolorem!</p>
+            <p class="text">Excellent and easy access medical consultation and prescription. Thanks for amazing services.I personally Recommend everyone to use their service at least once. I am sure you wouldn't regret. </p>
         </div>
 
-        <div class="box">
-            <img src="image/pic-3.png" alt="">
-            <h3>john deo</h3>
+        <div class="box" data-aos="fade-up">
+            <img src="/image/pic-3.png" alt="">
+            <h3>Steve Rodgers</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -206,7 +201,7 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star-half-alt"></i>
             </div>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sapiente nihil aperiam? Repellat sequi nisi aliquid perspiciatis libero nobis rem numquam nesciunt alias sapiente minus voluptatem, reiciendis consequuntur optio dolorem!</p>
+            <p class="text">I have used this service for many  times and get accurate results everytime. Everyone should give their Disease Prognosis test whenever you feel illness. Afterall prevention is better than Cure! A huge thanks to team Care-On -Line.</p>
         </div>
 
     </div>
@@ -217,36 +212,36 @@
 
 <section class="blogs" id="blogs">
 
-    <h1 class="heading"> Future <span>Services</span> </h1>
+    <h1 class="heading"> Upcoming <span>Services</span> </h1>
 
     <div class="box-container">
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
             <div class="image">
-                <img src="image/blog-1.jpg" alt="">
+                <img src="/image/blog-1.jpg" alt="">
             </div>
             <div class="content">
                 <div class="icon">
-                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st Feb, 2022 </a>
                     <a href="#"> <i class="fas fa-user"></i> by admin </a>
                 </div>
                 <h3>Malaria</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, eius.</p>
+                <p>We are currently working on a service that can predict malaria using patient information from parasite case reports.</p>
                 <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
             </div>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
             <div class="image">
-                <img src="image/blog-2.jpg" alt="">
+                <img src="/image/blog-2.jpg" alt="">
             </div>
             <div class="content">
                 <div class="icon">
-                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st Feb, 2022 </a>
                     <a href="#"> <i class="fas fa-user"></i> by admin </a>
                 </div>
                 <h3>Ocular Disease Recognition  </h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, eius.</p>
+                <p>Ocular Disease Recognition (ODR) is our system in which we pridict disease based on patient's age, color fundus photographs from left and right eyes and doctors' diagnostic keywords from doctors.</p>
                 <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
             </div>
         </div>
@@ -263,7 +258,7 @@
 
     <div class="box-container">
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
             <h3>quick links</h3>
             <a href="#"> <i class="fas fa-chevron-right"></i> home </a>
             <a href="#"> <i class="fas fa-chevron-right"></i> services </a>
@@ -271,7 +266,7 @@
             <a href="#"> <i class="fas fa-chevron-right"></i> review </a>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
             <h3>our services</h3>
             <a href="#"> <i class="fas fa-chevron-right"></i> Disease AI Prediction </a>
             <a href="#"> <i class="fas fa-chevron-right"></i> Breast Cancer </a>
@@ -280,7 +275,7 @@
             <a href="#"> <i class="fas fa-chevron-right"></i> Ocular Disease </a>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
             <h3>contact info</h3>
             <a href="#"> <i class="fas fa-phone"></i> +91-999999999 </a>
             <a href="#"> <i class="fas fa-envelope"></i> tejnarayan@gmail.com </a>
@@ -288,7 +283,7 @@
             <a href="#"> <i class="fas fa-map-marker-alt"></i> Delhi, india - 110045 </a>
         </div>
 
-        <div class="box" style="display: none;">
+        <div class="box" data-aos="fade-up" style="display: none;">
             <h3>follow us</h3>
             <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
             <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
@@ -314,7 +309,14 @@
 </script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 
-
+<!-- JS for AOS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset:150,
+        duration:1200,
+    });
+  </script>
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
 

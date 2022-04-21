@@ -1,0 +1,28 @@
+.result{
+    background-color: white;
+    min-height: 50%;
+    width:50%; 
+    z-index:50; 
+    position: fixed; 
+    top:25%; 
+    left:25%;
+    border:1px solid black;
+}
+
+.result_rev{
+    opacity: 0;
+}
+
+.report_sec{
+    opacity: 0.2;
+    background-color: white;
+}
+
+.report_sec_rev{
+    opacity: 1;
+    background-color: #eee;
+}
+
+.displaynone{
+    display: none;
+}
