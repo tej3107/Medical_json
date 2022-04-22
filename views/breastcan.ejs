@@ -8,7 +8,7 @@
 <!-- font awesome cdn link  -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
@@ -17,7 +17,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>
-<script sec="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<script sec="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <!-- jQuerry -->
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
@@ -26,28 +26,28 @@
 <!-- Animate CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-<link rel="stylesheet" href="./css/temp.css">
-<link rel="stylesheet" href="./css/breastCancer.css">
+
+<link rel="stylesheet" href="/css/breastCancer.css">
 
 <head>
     <script>
-        inputs = ['radius_mean','texture_mean','perimeter_mean','area_mean','smoothness_mean',
-                'compactness_mean','concavity_mean','concave points_mean','symmetry_mean',
-                'fractal_dimension_mean']
+        inputs = ['radius_mean', 'texture_mean', 'perimeter_mean', 'area_mean', 'smoothness_mean',
+            'compactness_mean', 'concavity_mean', 'concave points_mean', 'symmetry_mean',
+            'fractal_dimension_mean']
         async function loadModel() {
-        model = undefined;
-        modellling = undefined;
-        model = tf.loadLayersModel("https://raw.githubusercontent.com/tej3107/Medical_json/main/Json/breastCancer_model/model.json") // Model from breast cancer
-        .then(models =>{modellling = models;})
-        .catch(error =>{console.log(error,"error during breast cancer model");})
-        console.log(model);
+            model = undefined;
+            modellling = undefined;
+            model = tf.loadLayersModel("https://raw.githubusercontent.com/tej3107/Medical_json/main/Json/breastCancer_model/model.json") // Model from breast cancer
+                .then(models => { modellling = models; })
+                .catch(error => { console.log(error, "error during breast cancer model"); })
+            console.log(model);
         }
         loadModel();
         function make_prediction() {
-            input_xs = [[0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1]];
+            input_xs = [[0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1]];
             // input_xs.push(new Float64Array(10));
-            for(var i=0;i<inputs.length;++i){
-            // for(var i=0;i<1;++i){
+            for (var i = 0; i < inputs.length; ++i) {
+                // for(var i=0;i<1;++i){
                 x1 = document.getElementById(inputs[i]).value;
                 input_xs[0][i] = parseFloat(x1);
             }
@@ -72,13 +72,13 @@
             report1.classList.remove('report_sec_rev');
             result.classList.remove('result_rev');
 
-            if(outputData[0]>0.5){
+            if (outputData[0] > 0.5) {
                 pn1 = document.getElementById('benign');
                 pn1.classList.add('displaynone');
                 pn2 = document.getElementById('malig');
                 pn2.classList.remove('displaynone');
             }
-            else{
+            else {
                 pn = document.getElementById('malig');
                 pn.classList.add('displaynone');
                 pn2 = document.getElementById('benign');
@@ -86,7 +86,7 @@
             }
 
         }
-        function removeClass(){
+        function removeClass() {
             report1 = document.getElementById('report');
             result1 = document.getElementById('result');
 
@@ -97,76 +97,28 @@
             result.classList.add('result_rev');
         }
     </script>
-    <style>
-        .body {
-            background-color: blue;
-        }
-    </style>
+
     <title>Care-On-Line</title>
     <link rel="icon"
         href="data:image/png;base64,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" />
-    <style>
 
-        .hgt {
-            border-left: 3px solid black;
-            height: 100%;
-            padding-left: 20px;
-            color: #adb5bd;
-        }
-
-        .hg1 {
-            /* border-left: 3px solid green; */
-            height: 100%;
-            padding-left: 23px;
-            position: relative;
-        }
-
-        .hg1::after {
-            padding-left: 25px;
-            content: '';
-            position: absolute;
-            left: 0px;
-            bottom: 10%;
-            height: 100%;
-            border-left: 3px solid #1576d1;
-        }
-
-        .hg2 {
-            border-left: 3px solid #1576d1;
-            height: 100%;
-            padding-left: 20px;
-            color: #adb5bd;
-        }
-
-        @media (max-width:1000px) {
-            #basicd1 {
-                display: none;
-            }
-        }
-
-        @media (max-width:600px) {
-            #basicd2 {
-                display: none;
-            }
-        }
-    </style>
 </head>
 
-<body style="background-color: #eee;">
-    <header class="header" style="height: 40px;">
+<body>
+    <header class="header">
 
         <div class="animate__animated animate__heartBeat animate__repeat-3 animate__slower"> <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> <strong>Care-On-Line </strong></a></div>
-
-        <nav class="navbar" style="text-decoration: underline;">
-            <a href="/">Home</a>
-            <a href="/">Services</a>
-            <a href="/">About</a>
-            <a href="/">Review</a>
-        </nav>
-
-        <div id="menu-btn" class="fas fa-bars"></div>
-
-    </header>
+     
+         <nav class="navbar">
+             <a href="/">home</a>
+             <a href="/">services</a>
+             <a href="/">about</a>
+             <a href="/">review</a>
+         </nav>
+     
+         <div id="menu-btn" class="fas fa-bars"></div>
+     
+     </header>
     <div>
         <input type="hidden" name="hg" id="hg" value="">
         <input type="hidden" name="wi" id="wi" value="">
@@ -181,33 +133,95 @@
         <input type="hidden" name="ph" id="ph" value="">
     </div>
 
-    <div class="container report_sec_rev" style="z-index:100; height: 100vh;" id="report">
-        <div class="row">
-            <div class="col-lg-1" style="border: 0px solid black; margin: 0px auto 0px auto;"></div>
-            <div class="col-lg-2" style="border: 0px solid black; margin: 0px auto 0px auto;" id="basicd1">
-                <div style="margin-top:50px;">
+    <div class="container report_sec_rev " id="report">
+        <div class="row main" >
+            <!-- <div class="col-lg-1" style="border: 0px solid black; margin: 0px auto 0px auto;"></div> -->
+            <div class="title col-lg-2" id="basicd1">
+                <div >
                     <div>
                         <div class="hg1">
                             <strong>Breast Cancer Check</strong>
+                            <i class="fas fa-ribbon"></i>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-7 justify-content-center"
-                style="border-radius:10px; margin: 50px auto; background-color: white; width:100%" id="p1">
-                 
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7 justify-content-center cancerInputs"  id="p1">
+
                 <!-- Breast Cancer input to be taken here -->
 
-                <input type="number" placeholder="radius_mean" name="radius_mean" id="radius_mean" required>
-                <input type="number" placeholder="texture_mean" name="texture_mean" id="texture_mean" required>
-                <input type="number" placeholder="perimeter_mean" name="perimeter_mean" id="perimeter_mean" required>
-                <input type="number" placeholder="area_mean" name="area_mean" id="area_mean" required>
-                <input type="number" placeholder="smoothness_mean" name="smoothness_mean" id="smoothness_mean" required>
-                <input type="number" placeholder="compactness_mean" name="compactness_mean" id="compactness_mean" required>
-                <input type="number" placeholder="concavity_mean" name="concavity_mean" id="concavity_mean" required>
-                <input type="number" placeholder="concave  points_mean" name="concave points_mean" id="concave points_mean" required>
-                <input type="number" placeholder="symmetry_mean" name="symmetry_mean" id="symmetry_mean" required>
-                <input type="number" placeholder="fractal_dimension_mean" name="fractal_dimension_mean" id="fractal_dimension_mean" required>
+                <form>
+                    <div class="row animate__animated animate__fadeInUp">
+                        <div class="form-group col-lg-6 col-md-6 col-sm-12" >
+                            <label>Mean Radius</label>
+                            <input type="number" placeholder=" 0" name="radius_mean" id="radius_mean" required>
+                        </div>
+                        <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                            <label>Mean Texture</label>
+                            <input type="number" placeholder=" 0" name="texture_mean" id="texture_mean"
+                                required>
+                        </div>
+                    </div>
+                    <div class="row animate__animated animate__fadeInUp">
+                        <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                            <label>Mean Parameter</label>
+                            <input type="number" placeholder=" 0" name="perimeter_mean" id="perimeter_mean"
+                                required>
+                        </div>
+                        <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                            <label>Mean Area</label>
+                            <input type="number" placeholder=" 0" name="area_mean" id="area_mean" required>
+                        </div>
+                    </div>
+
+                    <div class="row animate__animated animate__fadeInUp">
+                        <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                            <label>Mean Smoothness</label>
+                            <input type="number" placeholder=" 0" name="smoothness_mean"
+                                id="smoothness_mean" required>
+                        </div>
+                        <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                            <label>Mean Compactness</label>
+                            <input type="number" placeholder=" 0" name="compactness_mean"
+                                id="compactness_mean" required>
+                        </div>
+                    </div>
+                    <div class="row animate__animated animate__fadeInUp">
+                        <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                            <label>Mean Concavity</label>
+                            <input type="number" placeholder=" 0" name="concavity_mean" id="concavity_mean"
+                                required>
+                        </div>
+                        <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                            <label>Mean Concave Points</label>
+                            <input type="number" placeholder=" 0" name="concave points_mean"
+                                id="concave points_mean" required>
+                        </div>
+                    </div>
+                    <div class="row animate__animated animate__fadeInUp">
+                        <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                            <label>Mean Symmetry</label>
+                            <input type="number" placeholder=" 0" name="symmetry_mean" id="symmetry_mean"
+                                required>
+                        </div>
+                        <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                            <label>Mean Fractional Dimension</label>
+                            <input type="number" placeholder=" 0" name="fractal_dimension_mean"
+                                id="fractal_dimension_mean" required>
+                        </div>
+                    </div>
+
+
+                    <button class="btn btn-primary" onclick="make_prediction()">Check</button>
+
+
+                </form>
+
+                <!-- ........................................................................................... -->
+
+
+
+
 
                 <!-- <input type="number" value="18" placeholder="radius_mean" name="radius_mean" id="radius_mean" required>
                 <input type="number" value="10.38" placeholder="texture_mean" name="texture_mean" id="texture_mean" required>
@@ -220,22 +234,22 @@
                 <input type="number" value="0.2419" placeholder="symmetry_mean" name="symmetry_mean" id="symmetry_mean" required>
                 <input type="number" value="0.7871" placeholder="fractal_dimension_mean" name="fractal_dimension_mean" id="fractal_dimension_mean" required> -->
 
-                <button class="btn btn-primary" onclick="make_prediction()">Check</button>
+
 
             </div>
-            <div class="col-lg-2" style="border: 0px solid black; margin: 50px auto 0px auto;"></div>
+
         </div>
     </div>
 
-    <div id="result" class="result_rev">
-        hello there
+    <div id="result" class="result_rev animate__animated animate__zoomInDown">
+
         <button style="position: relative;" onclick="removeClass()">X</button>
 
         <div id="malig">
-            <strong>Malignant</strong>
+            <strong> MALIGNANT</strong>
         </div>
         <div id="benign">
-            <strong>Benign</strong>
+            <strong>BENIGN</strong>
         </div>
     </div>
 
